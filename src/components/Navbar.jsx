@@ -3,37 +3,46 @@ import { FaInstagram, FaUser, FaHeartO, FaCompass, FaSearch } from 'react-icons/
 import styled from 'styled-components';
 
 const Nav = styled.div`
+      background-color: white;
       display: flex;
-      font-size: 30px;
       font-weight: bold;
-      justify-content: space-around;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        font-size: 40px;
+        font-family: 'Oleo Script', cursive;
+      }
     `;
 
-const Input = styled.input`
-    height: 1em;
+const SeachContainer = styled.div`
+    background: #fafafa;
     width: 8em;
     padding: 10px;
     margin: 10px;
+    input {
+      height: 15px;
+      text-align: center;
+    }
 `;
 
 const Icons = styled.div`
     display: flex;
     justify-content: space-around;
+    width: 25%;
 `;
 
 class Navbar extends Component{
   render(){
     return (
         <Nav>
-          <h3><FaInstagram/> | Instaclone</h3>
-          <FaSearch/>
-          <Input type="text"/> 
+          <p><FaInstagram/> | Instaclone</p>
+          <SeachContainer>
+            <FaSearch/><input type="text"/>
+          </SeachContainer>
           <Icons>
-            <div>
-              <div><FaCompass /></div>
-              <div><FaHeartO /></div>
-              <FaUser />
-            </div>
+              <FaCompass size={28} />
+              <FaHeartO size={28}/>
+              <FaUser size={28}/>
           </Icons>
         </Nav>
     );
