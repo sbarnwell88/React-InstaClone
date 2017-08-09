@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
 import Post from './Post';
 import FakePost from '../seed/fakePost.js';
+<<<<<<< HEAD
 
+=======
+>>>>>>> starter-code
 
 class Posts extends Component {
   state = {

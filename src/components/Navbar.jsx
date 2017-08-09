@@ -3,6 +3,7 @@ import { FaInstagram, FaUser, FaHeartO, FaCompass, FaSearch } from 'react-icons/
 import styled from 'styled-components';
 
 const Nav = styled.div`
+<<<<<<< HEAD
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -44,11 +45,40 @@ const IconsContainer = styled.div`
   width: 25%;
   display: flex;
   justify-content: space-around;
+=======
+      background-color: white;
+      display: flex;
+      font-weight: bold;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        font-size: 40px;
+        font-family: 'Oleo Script', cursive;
+      }
+    `;
+
+const SeachContainer = styled.div`
+    background: #fafafa;
+    width: 8em;
+    padding: 10px;
+    margin: 10px;
+    input {
+      height: 15px;
+      text-align: center;
+    }
+`;
+
+const Icons = styled.div`
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+>>>>>>> starter-code
 `;
 
 class Navbar extends Component{
   render(){
     return (
+<<<<<<< HEAD
       <Nav>
         <p><FaInstagram /> | Instaclone</p>
         <SearchContainer>
@@ -60,6 +90,19 @@ class Navbar extends Component{
           <FaUser size={28} />
         </IconsContainer>
       </Nav>
+=======
+        <Nav>
+          <p><FaInstagram/> | Instaclone</p>
+          <SeachContainer>
+            <FaSearch/><input type="text"/>
+          </SeachContainer>
+          <Icons>
+              <FaCompass size={28} />
+              <FaHeartO size={28}/>
+              <FaUser size={28}/>
+          </Icons>
+        </Nav>
+>>>>>>> starter-code
     );
   }
 }
