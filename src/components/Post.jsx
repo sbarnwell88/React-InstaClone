@@ -4,22 +4,6 @@ import styled from 'styled-components';
 import { FaHeartO, FaCommentO } from 'react-icons/lib/fa'
 
 const PostContainer = styled.div`
-<<<<<<< HEAD
-  background-color: #fff;
-  border-radius: 3px;
-  width: 95vw;
-  max-width: 600px;
-  margin: 20px auto;
-  border: 1px solid #e6e6e6;
-`;
-
-const PostUser = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 16px;
-  img{
-=======
     background-color: #fff;
     width: 95vw;
     max-width: 600px;
@@ -33,27 +17,18 @@ const PostUser = styled.div`
     align-items: center;
     padding: 16px;
     img{
->>>>>>> starter-code
     height: 30px;
     width: 30px;
     border-radius: 100%;
   }
-<<<<<<< HEAD
-  span{
-=======
     span{
->>>>>>> starter-code
     padding-left: 5px;
     font-weight: bold;
   }
 `;
 
 const PostContent = styled.div`
-<<<<<<< HEAD
-  img{
-=======
     img{
->>>>>>> starter-code
     max-width: 600px;
     margin: 0 auto;
   }
